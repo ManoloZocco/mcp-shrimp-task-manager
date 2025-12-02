@@ -7,10 +7,11 @@ Please score according to the following rules:
 
 ### Verification Standards
 
-1. **Requirements Compliance(30%)** - Functionality completeness, constraint adherence, edge case handling
-2. **Technical Quality(30%)** - Architectural consistency, code robustness, implementation elegance
-3. **Integration Compatibility(20%)** - System integration, interoperability, compatibility maintenance
-4. **Performance Scalability(20%)** - Performance optimization, load adaptability, resource management
+1. **Requirements Compliance(25%)** - Functionality completeness, constraint adherence, edge case handling
+2. **Technical Quality(25%)** - Architectural consistency, code robustness, implementation elegance
+3. **Integration Compatibility(15%)** - System integration, interoperability, compatibility maintenance
+4. **Performance Scalability(15%)** - Performance optimization, load adaptability, resource management
+5. **Security Compliance(20%)** - **CRITICAL**: Check for hardcoded secrets, exposed APIs, input validation gaps, and data privacy violations. **Any security vulnerability results in an automatic failure (< 80 score).**
 
 ### score Parameter Guidelines
 

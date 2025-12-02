@@ -1,6 +1,6 @@
 /**
- * analyzeTask prompt 生成器
- * 負責將模板和參數組合成最終的 prompt
+ * analyzeTask prompt generator
+ * Responsible for combining templates and parameters into the final prompt
  */
 /**
  * analyzeTask prompt generator
@@ -14,7 +14,7 @@ import {
 } from "../loader.js";
 
 /**
- * analyzeTask prompt 參數介面
+ * analyzeTask prompt parameter interface
  */
 /**
  * analyzeTask prompt parameter interface
@@ -26,9 +26,9 @@ export interface AnalyzeTaskPromptParams {
 }
 
 /**
- * 獲取 analyzeTask 的完整 prompt
- * @param params prompt 參數
- * @returns 生成的 prompt
+ * Get complete prompt for analyzeTask
+ * @param params prompt parameters
+ * @returns generated prompt
  */
 /**
  * Get complete prompt for analyzeTask
@@ -57,7 +57,7 @@ export async function getAnalyzeTaskPrompt(
     iterationPrompt: iterationPrompt,
   });
 
-  // 載入可能的自定義 prompt
+  // Load possible custom prompt
   // Load possible custom prompt
   return loadPrompt(prompt, "ANALYZE_TASK");
 }

@@ -1,17 +1,17 @@
 [🇺🇸 English](README.md) | [🇩🇪 Deutsch](docs/de/README.md) | [🇪🇸 Español](docs/es/README.md) | [🇫🇷 Français](docs/fr/README.md) | [🇮🇹 Italiano](docs/it/README.md) | [🇮🇳 हिन्दी](docs/hi/README.md) | [🇰🇷 한국어](docs/ko/README.md) | [🇧🇷 Português](docs/pt/README.md) | [🇷🇺 Русский](docs/ru/README.md) | [🇨🇳 中文](docs/zh/README.md)
 
-# MCP Shrimp Task Manager
+# MCP Cortex Task Manager
 
-> 🦐 **Intelligent task management for AI-powered development** - Break down complex projects into manageable tasks, maintain context across sessions, and accelerate your development workflow.
+> 🧠 **Intelligent task management for AI-powered development** - Break down complex projects into manageable tasks, maintain context across sessions, and accelerate your development workflow.
 
 <div align="center">
   
-[![Shrimp Task Manager Demo](docs/yt.png)](https://www.youtube.com/watch?v=Arzu0lV09so)
+[![Cortex Task Manager Demo](docs/yt.png)](https://www.youtube.com/watch?v=Arzu0lV09so)
 
 **[Watch Demo Video](https://www.youtube.com/watch?v=Arzu0lV09so)** • **[Quick Start](#-quick-start)** • **[Documentation](#-documentation)**
 
-[![smithery badge](https://smithery.ai/badge/@cjo4m06/mcp-shrimp-task-manager)](https://smithery.ai/server/@cjo4m06/mcp-shrimp-task-manager)
-<a href="https://glama.ai/mcp/servers/@cjo4m06/mcp-shrimp-task-manager"><img width="380" height="200" src="https://glama.ai/mcp/servers/@cjo4m06/mcp-shrimp-task-manager/badge" alt="Shrimp Task Manager MCP server" /></a>
+[![smithery badge](https://smithery.ai/badge/@cjo4m06/mcp-cortex-task-manager)](https://smithery.ai/server/@cjo4m06/mcp-cortex-task-manager)
+<a href="https://glama.ai/mcp/servers/@cjo4m06/mcp-cortex-task-manager"><img width="380" height="200" src="https://glama.ai/mcp/servers/@cjo4m06/mcp-cortex-task-manager/badge" alt="Cortex Task Manager MCP server" /></a>
 
 </div>
 
@@ -50,12 +50,12 @@ npm install -g @anthropic-ai/claude-code
 claude
 ```
 
-#### Installing Shrimp Task Manager
+#### Installing Cortex Task Manager
 
 ```bash
 # Clone the repository
-git clone https://github.com/cjo4m06/mcp-shrimp-task-manager.git
-cd mcp-shrimp-task-manager
+git clone https://github.com/cjo4m06/mcp-cortex-task-manager.git
+cd mcp-cortex-task-manager
 
 # Install dependencies
 npm install
@@ -71,11 +71,11 @@ Create a `.mcp.json` file in your project directory:
 ```json
 {
   "mcpServers": {
-    "shrimp-task-manager": {
+    "cortex-task-manager": {
       "command": "node",
-      "args": ["/path/to/mcp-shrimp-task-manager/dist/index.js"],
+      "args": ["/path/to/mcp-cortex-task-manager/dist/index.js"],
       "env": {
-        "DATA_DIR": "/path/to/your/shrimp_data",
+        "DATA_DIR": "/path/to/your/cortex_data",
         "TEMPLATES_USE": "en",
         "ENABLE_GUI": "false"
       }
@@ -88,11 +88,11 @@ Example configuration:
 ```json
 {
   "mcpServers": {
-    "shrimp-task-manager": {
+    "cortex-task-manager": {
       "command": "node",
-      "args": ["/home/fire/claude/mcp-shrimp-task-manager/dist/index.js"],
+      "args": ["/home/fire/claude/mcp-cortex-task-manager/dist/index.js"],
       "env": {
-        "DATA_DIR": "/home/fire/claude/project/shrimp_data",
+        "DATA_DIR": "/home/fire/claude/project/cortex_data",
         "TEMPLATES_USE": "en",
         "ENABLE_GUI": "false"
       }
@@ -121,9 +121,9 @@ claude --dangerously-skip-permissions --mcp-config .mcp.json
 2. **Plan a task**: `"plan task: implement user authentication"`
 3. **Execute tasks**: `"execute task"` or `"continuous mode"`
 
-## 💡 What is Shrimp?
+## 💡 What is Cortex?
 
-Shrimp Task Manager is an MCP (Model Context Protocol) server that transforms how AI agents approach software development. Instead of losing context or repeating work, Shrimp provides:
+Cortex Task Manager is an MCP (Model Context Protocol) server that transforms how AI agents approach software development. Instead of losing context or repeating work, Cortex provides:
 
 - **🧠 Persistent Memory**: Tasks and progress persist across sessions
 - **📋 Structured Workflows**: Guided processes for planning, execution, and verification
@@ -231,7 +231,7 @@ PROMPT_LANGUAGE=en      # Prompt language (en, zh, etc.)
 ### Available Commands
 
 | Command | Description |
-|---------|-------------|
+|---------|-------------
 | `init project rules` | Initialize project standards |
 | `plan task [description]` | Create a task plan |
 | `execute task [id]` | Execute specific task |
@@ -255,7 +255,7 @@ Created by [cjo4m06](https://github.com/cjo4m06) and maintained by the community
 ---
 
 <p align="center">
-  <a href="https://github.com/cjo4m06/mcp-shrimp-task-manager">GitHub</a> •
-  <a href="https://github.com/cjo4m06/mcp-shrimp-task-manager/issues">Issues</a> •
-  <a href="https://github.com/cjo4m06/mcp-shrimp-task-manager/discussions">Discussions</a>
+  <a href="https://github.com/cjo4m06/mcp-cortex-task-manager">GitHub</a> •
+  <a href="https://github.com/cjo4m06/mcp-cortex-task-manager/issues">Issues</a> •
+  <a href="https://github.com/cjo4m06/mcp-cortex-task-manager/discussions">Discussions</a>
 </p>

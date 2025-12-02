@@ -1,5 +1,5 @@
 {
-  "app_title": "Shrimp Task Manager",
+  "app_title": "Cortex Task Manager",
   "status_indicator_online": "ONLINE",
   "dependency_view_title": "Dependency View",
   "dependency_graph_placeholder": "Dependency relationship for all tasks",
@@ -19,12 +19,10 @@
   "task_list_empty": "No matching tasks",
   "task_details_title": "Task Details",
   "task_details_placeholder": "Select a task to view details",
-  "footer_copyright": "© 2023 Shrimp Task Manager - Current time: ",
-
+  "footer_copyright": "© 2023 Cortex Task Manager - Current time: ",
   "status_pending": "Pending",
   "status_in_progress": "In Progress",
   "status_completed": "Completed",
-
   "task_detail_status_label": "Status:",
   "task_detail_summary_title": "Completion Summary",
   "task_detail_description_title": "Task Description",
@@ -41,14 +39,11 @@
   "task_detail_no_related_files": "No related files",
   "task_detail_no_notes": "No notes",
   "task_detail_unknown_dependency": "Unknown Task",
-
   "progress_completed": "Completed",
   "progress_in_progress": "In Progress",
   "progress_pending": "Pending",
   "progress_total": "Total",
-
   "global_analysis_title": "Goal",
-
   "error_loading_tasks": "Failed to load tasks: {message}",
   "error_updating_tasks": "Failed to update tasks: {message}",
   "error_loading_graph": "Failed to load dependency graph",

@@ -1,7 +1,5 @@
 /**
- * queryTask prompt 生成器
  * queryTask prompt generator
- * 負責將模板和參數組合成最終的 prompt
  * Responsible for combining templates and parameters into the final prompt
  */
 
@@ -13,7 +11,6 @@ import {
 import { Task } from "../../types/index.js";
 
 /**
- * queryTask prompt 參數介面
  * queryTask prompt parameters interface
  */
 export interface QueryTaskPromptParams {
@@ -27,11 +24,8 @@ export interface QueryTaskPromptParams {
 }
 
 /**
- * 獲取 queryTask 的完整 prompt
  * Get the complete prompt for queryTask
- * @param params prompt 參數
  * @param params prompt parameters
- * @returns 生成的 prompt
  * @returns generated prompt
  */
 export async function getQueryTaskPrompt(
@@ -75,7 +69,6 @@ export async function getQueryTaskPrompt(
     query,
   });
 
-  // 載入可能的自定義 prompt
   // Load possible custom prompt
   return loadPrompt(prompt, "QUERY_TASK");
 }

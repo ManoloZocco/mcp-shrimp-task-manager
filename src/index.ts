@@ -12,7 +12,6 @@ import {
 import { setGlobalServer } from "./utils/paths.js";
 import { createWebServer } from "./web/webServer.js";
 
-// 導入所有工具函數和 schema
 // Import all tool functions and schemas
 import {
   planTask,
@@ -55,11 +54,10 @@ async function main() {
     let webServerInstance: Awaited<ReturnType<typeof createWebServer>> | null =
       null;
 
-    // 創建MCP服務器
     // Create MCP server
     const server = new Server(
       {
-        name: "Shrimp Task Manager",
+        name: "Cortex Task Manager",
         version: "1.0.0",
       },
       {
@@ -70,18 +68,16 @@ async function main() {
       }
     );
 
-    // 設置全局 server 實例
     // Set global server instance
     setGlobalServer(server);
 
-    // 監聽 initialized 通知來啟動 web 服務器
     // Listen for initialized notification to start web server
     if (ENABLE_GUI) {
       server.setNotificationHandler(InitializedNotificationSchema, async () => {
         try {
           webServerInstance = await createWebServer();
           await webServerInstance.startServer();
-        } catch (error) {}
+        } catch (error) { }
       });
     }
 
@@ -367,7 +363,6 @@ async function main() {
       }
     );
 
-    // 建立連接
     // Establish connection
     const transport = new StdioServerTransport();
     await server.connect(transport);
